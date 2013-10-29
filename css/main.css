@@ -28,6 +28,12 @@ a {
 p {
   margin-bottom: 10px; }
 
+.green {
+  color: green; }
+
+.right {
+  float: right; }
+
 .content-wrapper {
   width: 960px;
   margin: 0 auto; }
@@ -37,6 +43,14 @@ p {
   #header .logo {
     font-family: 'Orbitron', sans-serif;
     font-size: 35px; }
+  #header a.right {
+    margin-top: -14px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: #EEE; }
+    #header a.right:hover {
+      background: green;
+      color: white; }
 
 .section {
   margin-bottom: 20px; }
@@ -46,25 +60,31 @@ p {
   border-width: 1px 0;
   padding: 30px 0;
   text-align: center; }
-  .introduction .work > ul > li {
-    padding: 8px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    font-size: 14px; }
-    .introduction .work > ul > li:nth-child(2n-1) {
-      background: #EEE; }
-    .introduction .work > ul > li:last-child {
-      margin-bottom: 30px; }
-    .introduction .work > ul > li img {
-      float: left;
-      padding-right: 16px; }
-    .introduction .work > ul > li h2 {
-      margin-top: 6px; }
-  .introduction .work ul.list li {
+
+.work > ul > li {
+  padding: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-size: 14px; }
+  .work > ul > li:nth-child(2n-1) {
+    background: #EEE; }
+  .work > ul > li:last-child {
+    margin-bottom: 30px; }
+  .work > ul > li img {
     float: left;
-    background: green;
-    margin: 0 4px 0 0;
-    padding: 2px 4px;
-    border-radius: 3px;
-    color: white;
-    font-size: 12px; }
+    padding-right: 16px; }
+  .work > ul > li h2 {
+    margin-top: 6px; }
+  .work > ul > li a {
+    text-decoration: underline; }
+    .work > ul > li a:hover {
+      color: #444444; }
+
+.work ul.list li {
+  float: left;
+  background: green;
+  margin: 0 4px 0 0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px; }
